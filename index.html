@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- Added Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-200">
+    <main class="mx-auto flex justify-center items-center h-screen">
+      <div class="bg-slate-500 font-sans rounded-xl max-w-xl overflow-hidden">
+        <!-- display -->
+        <input
+          id="display"
+          class="border-none w-full p-5 text-5xl font-extrabold flex-wrap text-left bg-slate-300 text-slate-950"
+          readonly
+        />
+
+        <!-- keys -->
+        <div class="grid grid-cols-4 gap-x-3 gap-y-4 p-5 md:p-10">
+          <button
+            onclick="appendToDisplay('+')"
+            class="border-none rounded-full h-24 w-24 bg-slate-900 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            +
+          </button>
+          <button
+            onclick="appendToDisplay('7')"
+            class="border-none rounded-full h-24 w-24 bg-slate-800 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            7
+          </button>
+          <button
+            onclick="appendToDisplay('8')"
+            class="border-none rounded-full h-24 w-24 bg-slate-800 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            8
+          </button>
+          <button
+            onclick="appendToDisplay('9')"
+            class="border-none rounded-full h-24 w-24 bg-slate-800 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            9
+          </button>
+          <button
+            onclick="appendToDisplay('-')"
+            class="border-none rounded-full h-24 w-24 bg-slate-900 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            -
+          </button>
+          <button
+            onclick="appendToDisplay('4')"
+            class="border-none rounded-full h-24 w-24 bg-slate-800 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            4
+          </button>
+          <button
+            onclick="appendToDisplay('5')"
+            class="border-none rounded-full h-24 w-24 bg-slate-800 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            5
+          </button>
+          <button
+            onclick="appendToDisplay('6')"
+            class="border-none rounded-full h-24 w-24 bg-slate-800 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            6
+          </button>
+          <button
+            onclick="appendToDisplay('*')"
+            class="border-none rounded-full h-24 w-24 bg-slate-900 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            *
+          </button>
+          <button
+            onclick="appendToDisplay('1')"
+            class="border-none rounded-full h-24 w-24 bg-slate-800 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            1
+          </button>
+          <button
+            onclick="appendToDisplay('2')"
+            class="border-none rounded-full h-24 w-24 bg-slate-800 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            2
+          </button>
+          <button
+            onclick="appendToDisplay('3')"
+            class="border-none rounded-full h-24 w-24 bg-slate-800 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            3
+          </button>
+          <button
+            onclick="appendToDisplay('/')"
+            class="border-none rounded-full h-24 w-24 bg-slate-900 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            /
+          </button>
+          <button
+            onclick="appendToDisplay('0')"
+            class="border-none rounded-full h-24 w-24 bg-slate-800 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            0
+          </button>
+          <button
+            onclick="appendToDisplay('.')"
+            class="border-none rounded-full h-24 w-24 bg-slate-800 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            .
+          </button>
+          <button
+            onclick="calculate()"
+            class="border-none rounded-full h-24 w-24 bg-slate-800 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            =
+          </button>
+          <button
+            onclick="clearDisplay()"
+            class="border-none rounded-full h-24 w-24 bg-slate-900 text-white font-bold text-5xl cursor-pointer hover:bg-slate-200 hover:text-slate-700 active:bg-slate-800"
+          >
+            C
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Added Javascript file  -->
+    <script src="js_file/index.js"></script>
+  </body>
+</html>
